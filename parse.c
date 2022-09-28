@@ -53,6 +53,7 @@ t_node	**parse(int argc, char **argv)
 	head = malloc(sizeof(t_node *));
 	if (!head)
 		exit(-1);
+	*head = NULL;
 	while (i < argc)
 	{
 		splitted = ft_split(argv[i++], ' ');

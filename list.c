@@ -66,6 +66,7 @@ t_node	**copy(t_node **head, t_node *last)
 	copy = malloc(sizeof(t_node *));
 	if (copy == NULL)
 		error(head);
+	*copy = NULL;
 	while (last != NULL)
 	{
 		new = copy2(head, copy, aux, last->content);
